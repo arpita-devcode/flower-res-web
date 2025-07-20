@@ -16,11 +16,11 @@
     justify-content: space-between;
 }
 header{
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 .box-style{
-     border-radius: 50% 50% 0 0;
+    border-radius: 50% 50% 0 0;
     height: 538px;
     display: flex;
     justify-content: center;
@@ -42,39 +42,50 @@ header{
     margin-top: 32px;
 }
 .image{
-    width: 635px;
-    height: 800px;
+    max-width: 100%;
 }
 .flower-header{
-    width: 700px;
+    max-width: 700px;
 }
 /* flower-box style */
-.featured-box{
-    width: 1440px;
-    margin: 0 auto ;
+.icon-container {
+    background-color: rgba(91, 22, 22, 0.05);
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    margin: 128px auto;
 }
-.featured-flowers{
+.icon-box{
+    padding: 86px 100px;
     text-align: center;
-    margin: 178px 423px 43px;
 }
-.featured-flowers h2{
-    font-size: 2.5rem;
-    margin-bottom: 24px;
+/* responsive style */
+.sell{
+background-color:  rgba(229, 84, 115, 0.05);
 }
-.featured-titel-des{
-   line-height: 25px;
+.sell-features{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+  gap: 186px;
+  padding: 100px 250px;
 }
-.box-container1{
-    background-color: rgba(167, 33, 98, 0.15);
+.sell-titel {
+    text-align: center;
 }
-.box-container2{
-   background-color: rgba(5, 151, 160, 0.15);
+
+.sell-titel h3{
+   font-size: 2.5rem;
+   font-weight: 900;
+   margin-bottom: 5px;
 }
-.box-container3{
-   background-color: rgba(71, 125, 17, 0.15);
+h3 span{
+    color: #E55473;
 }
-.flower-box{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 24px;
+/* responsive style */
+@media screen and (max-width:546px){
+    .icon-container,.bg-colour {
+        flex-direction: column;
+    }
+   
 }
