@@ -1,5 +1,6 @@
 .bg-colour {
     background-color: rgba(229, 84, 115, 0.1);
+    padding-top: 100px;
 }
 
 /* shared style */
@@ -99,70 +100,176 @@ h3 span {
     color: #E55473;
 }
 
+/* flower image section */
+.flower-titel-contain {
+    text-align: center;
+    max-width: 1440px;
+    margin: 128px auto;
+}
+
+.insta-titel {
+    margin-bottom: 20px;
+}
+
+.insta-titel h1 {
+    margin-bottom: 20px;
+}
+
+.flower-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.form-container {
+    background-image: url(image/Rectangle\ 9.png);
+    background-position: center;
+    text-align: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+}
+
+.form-items {
+    padding: 120px 200px;
+}
+
+.form-container input[type="email"] {
+    width: 700px;
+    height: 64px;
+    border: none;
+}
+
+footer {
+    background-color: black;
+}
+
+.footer-end {
+    margin-top: 200px;
+    text-align: center;
+    padding: 128px 400px;
+}
+
+.footer-end h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.footer-end span {
+    color: #E55473;
+}
+
+.footer-end p {
+    color: white;
+}
+
+.copyright {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.7rem;
+}
+
+/* responsive style */
 @media screen and (min-width:576px) and (max-width:992px) {
 
     .display-flex,
     .icon-container,
-    .sell-features
-    {
-    flex-direction: column;
+    .sell-features {
+        flex-direction: column;
+    }
+
+    .icon-container {
+        grid-template-columns: 1fr;
+
+    }
+
+    .sell-features {
+        padding: 40px;
+    }
+
+    .flower-header {
+        justify-items: center;
+        padding: 30px;
+    }
+
+    .flower-images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* .form-items {
+        padding: 40px 20px;
+    }
+
+    .form-container input[type="email"] {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .btn-primary {
+        width: 100%;
+    } */
 }
 
-.icon-container {
-   grid-template-columns: 1fr;
-
-}
-.sell-features {
-    padding: 40px;
-}
-.flower-header {
-  justify-items: center;
-    padding: 30px;
-}
-}
 
 @media screen and (max-width: 576px) {
 
     .display-flex,
-    .sell-features
-    {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    gap: 20px;
-}
+    .sell-features {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+    }
 
-.icon-container {
-    grid-template-columns: 1fr;
-}
+    .icon-container,
+    .flower-images {
+        grid-template-columns: 1fr;
+    }
 
-.flower-header h1 {
-    font-size: 1.8rem;
-}
+    .flower-header h1 {
+        font-size: 1.8rem;
+    }
 
-.image img {
-    max-width: 100%;
-    padding: 0 20px;
-}
+    .image img {
+        max-width: 100%;
+        padding: 0 20px;
+    }
 
-.icon-box {
-    padding: 20px;
-}
+    .icon-box {
+        padding: 20px;
+    }
 
-.sell-features {
-    padding: 20px;
-    gap: 40px;
-}
+    .sell-features {
+        padding: 20px;
+        gap: 40px;
+    }
 
-.sell-img img {
-    width: 100%;
-    height: auto;
-}
+    .sell-img img {
+        width: 100%;
+        height: auto;
+    }
 
-.sell-titel h3 {
-    font-size: 1.8rem;
-}
+    .sell-titel h3 {
+        font-size: 1.8rem;
+    }
 
+    .form-items {
+        padding: 40px 20px;
+    }
 
+    .form-container input[type="email"] {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .btn-primary {
+        width: 100%;
+    }
+
+    .footer-end {
+        margin-top: 20px;
+        padding: 20px;
+        text-align: center;
+    }
 }
